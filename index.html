@@ -30,6 +30,7 @@
         padding: 80px 50px 0px 50px;
         background-color: white;
       }
+
       h1 {
         color: #f5606d;
         text-align: left;
@@ -99,23 +100,23 @@
         padding: 12px 17px;
         letter-spacing: 1px;
         border-radius: 2px;
-        background-color: #f5606d;
-        border: #f5606d;
+        background-color: #ce404c;
+        border: #ce404c;
         color: white;
         margin-top: 30px;
+        transition-duration: 1s;
       }
       button:hover {
-        background-color: #ffe5e3;
-        border: #ffe5e3;
+        background-color: #f5606d;
+        border: #f5606d;
         cursor: pointer;
-        transition-duration: 4ms;
         transition: ease-in-out;
       }
 
       small {
         font-size: 12px;
       }
-      a {
+      .wiki {
         text-decoration: none;
         color: black;
         opacity: 0.3;
@@ -146,6 +147,14 @@
       }
 
       /* Footer */
+      footer {
+        background-color: #f5606c79;
+        padding: 30px;
+      }
+      .grid-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+      }
     </style>
   </head>
   <body>
@@ -163,6 +172,7 @@
             <h3>
               Synopsis<small
                 ><a
+                  class="wiki"
                   href="https://en.wikipedia.org/wiki/Romance_Is_a_Bonus_Book"
                   target="_blank"
                 >
@@ -331,7 +341,28 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/468/origina
           </div>
         </section>
       </main>
-      <footer></footer>
+      <footer>
+        <div class="grid grid-3">
+          <div>
+            <h5>More about the Show</h5>
+          </div>
+          <div>
+            <h5>About Me</h5>
+            <p>
+              Hi! My name is Brooklyn and this is one of my favorite shows. I
+              coded this as an entry into a SheCodes monthly competition.
+            </p>
+          </div>
+          <div>
+            <h5>About this website</h5>
+            <p>
+              This project was coded by
+              <a href="" target="_blank">Brooklyn Van Bebber</a> and is
+              <a href="" target="_blank">open source</a> .
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
