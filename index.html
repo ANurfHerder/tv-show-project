@@ -10,6 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e78298b102.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
       body {
         background-color: #ffe5e3;
@@ -59,7 +67,7 @@
         font-style: normal;
       }
       h4 {
-        font-family: "Hind", sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: 300;
         font-style: normal;
       }
@@ -78,10 +86,12 @@
       }
       p {
         line-height: 1.5;
+        font-family: "Roboto", sans-serif;
       }
       ul {
         list-style-type: none;
         text-align: left;
+        font-family: "Roboto", sans-serif;
       }
       li {
         opacity: 0.7;
@@ -90,6 +100,7 @@
         line-height: 1.5;
         margin: 0 auto;
         padding: 7px 15px 7px 0px;
+        font-family: "Roboto", sans-serif;
       }
       .music {
         margin: 0 auto;
@@ -105,6 +116,7 @@
         color: white;
         margin-top: 30px;
         transition-duration: 1s;
+        font-family: "Roboto", sans-serif;
       }
       button:hover {
         background-color: #f5606d;
@@ -148,12 +160,40 @@
 
       /* Footer */
       footer {
-        background-color: #f5606c79;
+        background-color: #f5606c4f;
         padding: 30px;
+        font-family: "Roboto", sans-serif;
       }
       .grid-3 {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 40px;
+      }
+      h5 {
+        font-size: 15px;
+        opacity: 0.7;
+      }
+      ul.foot {
+        padding: 0px;
+        list-style-type: none;
+      }
+      .foot {
+        font-size: 12px;
+        opacity: 0.6;
+      }
+      a.foot-link {
+        text-decoration: none;
+        color: #ce404c;
+      }
+      a.foot-link:hover {
+        opacity: 1;
+      }
+      .footer-icons {
+        display: flex;
+        justify-content: center;
+        background-color: #f5606c69;
+      }
+      i {
+        margin: 20px 10px;
       }
     </style>
   </head>
@@ -345,24 +385,67 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/468/origina
         <div class="grid grid-3">
           <div>
             <h5>More about the Show</h5>
+            <ul class="foot">
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Romance_Is_a_Bonus_Book"
+                  target="_blank"
+                  class="foot-link"
+                  >Wiki Page</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.imdb.com/title/tt9130542/"
+                  target="_blank"
+                  class="foot-link"
+                  >IMDB Page</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwii08zT7oWEAxUxF1kFHaEgA70QFnoECHEQAQ&url=https%3A%2F%2Fwww.netflix.com%2Ftitle%2F81045349&usg=AOvVaw2vOJx3u0SKGJfMpdOIQy4z&opi=89978449"
+                  target="_blank"
+                  class="foot-link"
+                  >Netflix Page</a
+                >
+              </li>
+            </ul>
           </div>
           <div>
             <h5>About Me</h5>
-            <p>
+            <p class="foot">
               Hi! My name is Brooklyn and this is one of my favorite shows. I
               coded this as an entry into a SheCodes monthly competition.
             </p>
           </div>
           <div>
             <h5>About this website</h5>
-            <p>
+            <p class="foot">
               This project was coded by
-              <a href="" target="_blank">Brooklyn Van Bebber</a> and is
-              <a href="" target="_blank">open source</a> .
+              <a href="" target="_blank" class="foot-link"
+                >Brooklyn Van Bebber</a
+              >
+              and is
+              <a href="" target="_blank" class="foot-link">open source</a> .
             </p>
           </div>
         </div>
       </footer>
+      <div class="footer-icons">
+        <a
+          href="https://www.linkedin.com/in/brooklyn-van-bebber-6bb8a9242/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin fa-xl" style="color: #79c2d0"></i>
+        </a>
+        <a href="https://github.com/ANurfHerder" target="_blank">
+          <i class="fa-brands fa-github fa-xl" style="color: black"></i>
+        </a>
+        <a href="https://www.instagram.com/anurfherder/" target="_blank">
+          <i class="fa-brands fa-instagram fa-xl" style="color: #ce404c"></i>
+        </a>
+      </div>
     </div>
   </body>
 </html>
