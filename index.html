@@ -38,6 +38,9 @@
         padding: 80px 50px 0px 50px;
         background-color: white;
       }
+      main {
+        padding-top: 50px;
+      }
 
       h1 {
         color: #f5606d;
@@ -156,7 +159,7 @@
         margin: 30px 50px;
       }
       .similar {
-        padding-bottom: 30px;
+        padding-bottom: 80px;
       }
       /* Characters */
       .character-card {
@@ -175,8 +178,9 @@
 
       /* Footer */
       footer {
-        background-color: #f5606c4f;
-        padding: 30px;
+        background-color: #fcbcbe;
+        padding: 60px 60px 10px 60px;
+        margin-top: -70px;
         font-family: "Roboto", sans-serif;
       }
       .grid-3 {
@@ -204,23 +208,41 @@
       }
       .footer-icons {
         display: flex;
-        justify-content: center;
-        background-color: #f5606c69;
+        justify-content: flex-start;
+        margin-top: 10px;
       }
       i {
         margin: 20px 10px;
+      }
+      .box {
+        --mask: radial-gradient(102.96px at 50% 140px, #000 99%, #0000 101%)
+            calc(50% - 100px) 0/200px 100%,
+          radial-gradient(102.96px at 50% -90px, #0000 99%, #000 101%) 50% 50px/200px
+            100% repeat-x;
+        -webkit-mask: var(--mask);
+        mask: var(--mask);
       }
     </style>
   </head>
   <body>
     <div class="container">
       <header>
-        <img
-          class="banner"
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/445/original/bb3ad71b-135f-4e04-867d-9fa3f8377765_rw_1920.jpg?1705791055"
-        />
+        <div class="grid">
+          <div></div>
+          <div>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/zjeXZEtEI2A?si=-hybi_imiFKVIDEg"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
       </header>
-      <main>
+      <main class="box">
         <section class="grid grid-2">
           <div class="left">
             <h1>Romance is a Bonus Book</h1>
@@ -504,7 +526,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/468/origina
           </div>
         </section>
       </main>
-      <footer>
+      <footer class="box">
         <div class="grid grid-3">
           <div>
             <h5>More about the Show</h5>
@@ -541,6 +563,26 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/468/origina
               Hi! My name is Brooklyn and this is one of my favorite shows. I
               coded this as an entry into a SheCodes monthly competition.
             </p>
+            <div class="footer-icons">
+              <a
+                href="https://www.linkedin.com/in/brooklyn-van-bebber-6bb8a9242/"
+                target="_blank"
+              >
+                <i
+                  class="fa-brands fa-linkedin fa-xl"
+                  style="color: #79c2d0"
+                ></i>
+              </a>
+              <a href="https://github.com/ANurfHerder" target="_blank">
+                <i class="fa-brands fa-github fa-xl" style="color: black"></i>
+              </a>
+              <a href="https://www.instagram.com/anurfherder/" target="_blank">
+                <i
+                  class="fa-brands fa-instagram fa-xl"
+                  style="color: #ce404c"
+                ></i>
+              </a>
+            </div>
           </div>
           <div>
             <h5>About this website</h5>
@@ -564,20 +606,6 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/468/origina
           </div>
         </div>
       </footer>
-      <div class="footer-icons">
-        <a
-          href="https://www.linkedin.com/in/brooklyn-van-bebber-6bb8a9242/"
-          target="_blank"
-        >
-          <i class="fa-brands fa-linkedin fa-xl" style="color: #79c2d0"></i>
-        </a>
-        <a href="https://github.com/ANurfHerder" target="_blank">
-          <i class="fa-brands fa-github fa-xl" style="color: black"></i>
-        </a>
-        <a href="https://www.instagram.com/anurfherder/" target="_blank">
-          <i class="fa-brands fa-instagram fa-xl" style="color: #ce404c"></i>
-        </a>
-      </div>
     </div>
   </body>
 </html>
