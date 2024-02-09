@@ -55,7 +55,7 @@
         background-color: white;
       }
       main {
-        padding-top: 50px;
+        padding-top: 80px;
       }
       .main-pic {
         width: 100%;
@@ -210,7 +210,7 @@
       /* Footer */
       footer {
         background-color: #fcbcbe;
-        padding: 60px 60px 10px 60px;
+        padding: 10px 60px 10px 60px;
         margin-top: -70px;
         font-family: "Roboto", sans-serif;
       }
@@ -245,14 +245,7 @@
       i {
         margin: 20px 10px;
       }
-      .box {
-        --mask: radial-gradient(102.96px at 50% 140px, #000 99%, #0000 101%)
-            calc(50% - 100px) 0/200px 100%,
-          radial-gradient(102.96px at 50% -90px, #0000 99%, #000 101%) 50% 50px/200px
-            100% repeat-x;
-        -webkit-mask: var(--mask);
-        mask: var(--mask);
-      }
+
       /* Animation */
       .hidden {
         opacity: 0;
@@ -260,6 +253,124 @@
       }
       .show {
         opacity: 1;
+      }
+      /* Responsive */
+      @media (max-width: 800px) {
+        .grid-2 {
+          grid-template-columns: 1fr;
+        }
+        main {
+          padding-top: 120px;
+        }
+        h1 {
+          text-align: center;
+          margin: 10px 0px;
+        }
+        h3 {
+          text-align: center;
+        }
+        .left {
+          text-align: center;
+          margin: 0 auto;
+        }
+        p {
+          margin: 0px 40px;
+        }
+        p.sub-review {
+          margin-bottom: 20px;
+        }
+        .review-p {
+          margin: 0 auto;
+        }
+        button {
+          margin: 20px 0px;
+        }
+        .episodes {
+          margin: 10px 60px;
+        }
+        .grid-3 {
+          grid-template-columns: 1fr 1fr;
+        }
+        .grid-5 {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+        .card {
+          max-width: 150px;
+        }
+        .foot-grid {
+          grid-template-columns: 1fr;
+          text-align: center;
+          margin-bottom: 0px;
+        }
+        .footer-icons {
+          display: block;
+          text-align: center;
+        }
+        .foot-link {
+          display: block;
+          text-align: center;
+        }
+        .bio-card {
+          grid-template-columns: 1fr;
+          font-size: 10px;
+        }
+        .pill {
+          display: block;
+          text-align: center;
+        }
+      }
+      @media (max-width: 400px) {
+        p {
+          margin: 0px 0px;
+          font-size: 13px;
+        }
+        button {
+          font-size: 10px;
+        }
+        .episodes {
+          margin: 0 auto;
+        }
+        li {
+          font-size: 10px;
+          padding-top: 0px;
+          margin-top: 0px;
+        }
+        h1 {
+          margin-bottom: 0px;
+          margin-top: 40px;
+        }
+        h4 {
+          font-size: 12px;
+        }
+        .similar {
+          display: none;
+        }
+        main {
+          padding-top: 150px;
+        }
+        .grid-2 {
+          padding-top: 0px;
+        }
+        .music {
+          padding-bottom: 100px;
+        }
+        .grid-3 {
+          grid-template-columns: 1fr 1fr;
+        }
+        .character-card {
+          max-width: 100px;
+        }
+        .bio-card {
+          grid-template-columns: 1fr;
+          font-size: 10px;
+        }
+        .pill {
+          display: block;
+          text-align: center;
+        }
+        .foot-grid {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
   </head>
@@ -271,7 +382,7 @@
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/445/original/bb3ad71b-135f-4e04-867d-9fa3f8377765_rw_1920.jpg?1705791055"
         />
       </header>
-      <main class="box review-section">
+      <main class="review-section">
         <section class="grid grid-2">
           <div class="left hidden">
             <h1>Quick Overview</h1>
@@ -557,8 +668,8 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/468/origina
           </div>
         </section>
       </main>
-      <footer class="box">
-        <div class="grid grid-3">
+      <footer>
+        <div class="grid grid-3 foot-grid">
           <div>
             <h5>More about the Show</h5>
             <ul class="foot">
